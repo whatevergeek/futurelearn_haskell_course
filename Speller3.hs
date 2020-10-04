@@ -10,4 +10,4 @@ combine :: [Char] -> [[Char]] -> [Char]
 combine _ [] = ""
 combine acc (x : xs)
   | length (x : xs) == 1 = acc ++ x
-  | otherwise = combine (acc ++ x ++ ", " ++ if length (x : xs) == 2 then "and " else "") xs
+  | otherwise = combine (acc ++ x ++ if length (x : xs) == 2 then ", and " else ", ") xs
