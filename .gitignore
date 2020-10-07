@@ -22,3 +22,8 @@ cabal.project.local~
 .HTF/
 .ghc.environment.*
 .vscode/tasks.json
+.ionide/symbolCache.db
+.metals/metals.h2.db
+.metals/metals.lock.db
+.metals/metals.log
+.vscode/settings.json
