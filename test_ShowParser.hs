@@ -1,5 +1,7 @@
 module ParsecTutorial where
 
+import ShowParser (parseShow)
+
 data Address = MkAddress
   { line1 :: String,
     number :: Integer,
@@ -33,4 +35,8 @@ rec2 =
     42
     [Blue, Yellow]
 
-main = putStrLn $ show [rec1, rec2]
+-- main = putStrLn $ show [rec1, rec2]
+
+rec_str = show [rec1, rec2]
+
+main = putStrLn $ parseShow rec_str
